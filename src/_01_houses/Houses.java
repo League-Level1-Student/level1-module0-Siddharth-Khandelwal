@@ -46,7 +46,7 @@ public class Houses {
 			nugget.setPenColor(Color.green);
 			nugget.move(100);
 			nugget.setPenColor(Color.blue);
-			nugget.move(600);
+			nugget.move(700);
 			nugget.setPenColor(Color.green);
 			nugget.move(200);
 		}
