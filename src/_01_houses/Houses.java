@@ -24,18 +24,31 @@ public class Houses {
 		drawHouse();
 		for (int j = 0; j < 9; j++) {
 			drawHouse();
-			
+		
 		}
+		
+		
 		nugget.setPenColor(Color.green);
 		nugget.turn(90);
 		nugget.move(100);
 		int j = 600;
 		nugget.setPenWidth(5);
-		for (int i = 0; i < 20; i++) {
+		nugget.setPenColor(Color.blue);
+		for (int i = 0; i < 5; i++) {
 			j-=5;
-			nugget.setPenColor(Color.green);
 			nugget.moveTo(0, j);
 			nugget.move(1000);
+		}
+		
+		for (int i = 0; i < 15; i++) {
+			j-=5;
+			nugget.moveTo(0, j);
+			nugget.setPenColor(Color.green);
+			nugget.move(100);
+			nugget.setPenColor(Color.blue);
+			nugget.move(600);
+			nugget.setPenColor(Color.green);
+			nugget.move(200);
 		}
 	}
 	void drawPointyRoof() {
@@ -58,7 +71,7 @@ public class Houses {
 		nugget.setSpeed(10);
 		nugget.hide();
 		nugget.move(i+75);
-		if(i+75>140) {
+		if(i+75>130) {
 			drawFlatRoof();
 		}
 		else {
