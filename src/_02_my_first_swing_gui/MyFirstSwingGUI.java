@@ -16,9 +16,9 @@ public class MyFirstSwingGUI {
 	public void run() {
 
 		// 1. Declare and initialize an object of the JFrame class
-
+JFrame Apple = new JFrame();
 		// 2. Set your JFrame object to be visible
-
+Apple.setVisible(true);
 		// 3. Open MyFirstSwingGUIRunner and run your program. Do you see your window? It's probably very
 		// small.
 
@@ -50,7 +50,7 @@ public class MyFirstSwingGUI {
 		try {
 			return new ImageIcon(ImageIO.read(new MyFirstSwingGUI().getClass().getResourceAsStream("java.png")));
 		} catch (IOException e) {
-			e.printStackTrace()
+			e.printStackTrace();
 			return null;
 		}
 	}
