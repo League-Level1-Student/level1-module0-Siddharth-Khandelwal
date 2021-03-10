@@ -29,7 +29,7 @@ JPanel Orange = new JPanel();
 		// 6. Declare and initialize an object of the JLabel class
 JLabel Banana = new JLabel();
 		// 7. Set the text of the JLabel to a lovely greeting
-Banana.setText("Hello there!");
+Banana.setText("Hello there, you rock!");
 		// 8. Add the JPanel object to the JFrame
 Apple.add(Orange);
 
