@@ -23,25 +23,27 @@ Apple.setVisible(true);
 		// small.
 
 		// 4. Use your JFrame to call setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)
-
+Apple.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		// 5. Declare and initialize an object of the JPanel class
-
+JPanel Orange = new JPanel();
 		// 6. Declare and initialize an object of the JLabel class
-
+JLabel Banana = new JLabel();
 		// 7. Set the text of the JLabel to a lovely greeting
-
+Banana.setText("Hello there!");
 		// 8. Add the JPanel object to the JFrame
+Apple.add(Orange);
 
 		// 9. Add the JLabel object to the JPanel
+Orange.add(Banana);
 
 		// 10. Pack your JFrame
-
+Apple.pack();
 		// 11. Run your program again. Do you see your message?
 
 		// 12. Use your JLabel to call setIcon(loadImage())
-
+Banana.setIcon(loadImage());
 		// 13. Re-pack the JFrame object
-
+Apple.pack();
 		// 14. Run the program one more time. Do you see the image?
 
 	}
