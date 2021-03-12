@@ -26,20 +26,25 @@ public class PhotoQuiz {
 		// 1. find an image on the internet, and put its URL in a String
 		// variable (from your browser, right click on the image, and select
 		// “Copy Image Address”)
-
+		String imageAdd = "https://media4.s-nbcnews.com/j/newscms/2016_36/1685951/ss-160826-twip-05_8cf6d4cb83758449fd400c7c3d71aa1f.fit-760w.jpg";
 		// 2. create a variable of type "Component" that will hold your image
-
+Component image = 	createImage(imageAdd);	
 		// 3. use the "createImage()" method below to initialize your Component
 
 		// 4. add the image to the quiz window
 
 		// 5. call the pack() method on the quiz window
-
+quizWindow.pack();
 		// 6. ask a question that relates to the image
-
+String Question = JOptionPane.showInputDialog("Where are pandas from?");
 		// 7. print "CORRECT" if the user gave the right answer
-
-		// 8. print "INCORRECT" if the answer is wrong
+if(Question.equalsIgnoreCase("China")){ 
+	JOptionPane.showMessageDialog(null, "CORRECT");
+}
+else {
+	JOptionPane.showMessageDialog(null, "INCORRECT"); 
+}
+// 8. print "INCORRECT" if the answer is wrong
 
 		// 9. remove the component from the quiz window (you may not see the
 		// effect of this until step 12)
