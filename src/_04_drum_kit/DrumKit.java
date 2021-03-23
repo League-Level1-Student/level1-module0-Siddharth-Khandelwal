@@ -45,17 +45,17 @@ Jeff.add(Bob) ;
 		// Eclipse project under "recipe package(drum_kit)".
 
 		// 8. Put the name of your image file in a String variable.
-
+String Bill = "drum.jpg";
 		// 9. Edit the next line to use your String variable
-		// drumLabelWithImage = createLabelImage(drumImageString);
+		 drumLabelWithImage = createLabelImage(Bill);
 
 		// 10. Add the image to the panel
-
+Bob.add(drumLabelWithImage);
 		// 11. Set the layout of the panel to "new GridLayout()"
-
+Bob.setLayout(new GridLayout());
 		// 12. call the pack() method on the frame. Run your program. Do you see
 		// your drum image?
-
+Jeff.pack();
 		// 13. add this mouse listener to drumLabelWithImage
 
 		// 18. Add more images to make a drumkit. Remember to add this mouse
