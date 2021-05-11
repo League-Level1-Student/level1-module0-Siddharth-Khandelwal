@@ -1,5 +1,5 @@
 import java.util.Random;
-
+int scorereal = 0;
 int y = 0;
 void setup() {
   size(1000, 600);
@@ -17,15 +17,23 @@ void draw() {
   y+=5;
   
   if(y > height){
+   checkCatch(i); 
     y = 0;
     i = rand.nextInt(601);
-  }
+  
 }
-int score = 0;
-void checkCatch(int x) {
-  if (x > mouseX && x < mouseX+100)
-    score++;
-  else if (score > 0) 
-    score--;
-  println("Your score is now: " + score);
+
+int score = i;
+if (score == mouseX){
+scorereal+=1;
+println(scorereal);
 }
+
+}
+    void checkCatch(int x){
+         if (x > mouseX && x < mouseX+100)
+            scorereal++;
+         else if (scorereal > 0) 
+            scorereal--;
+        println("Your score is now: " + scorereal);
+    }
