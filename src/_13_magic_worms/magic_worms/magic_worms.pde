@@ -3,13 +3,17 @@ void setup(){
   background(#7005FF);
 }
 void draw(){
-  for(int i=0;i<=300;i++);
-  int j = (int)random(height);
-  int u = (int)random(width);
-  fill(#298DC9);
+  makeMagical();
+  for(int i=0;i<=300;i++){
+  float j = getWormX(i);
+  float u = getWormY(i);
+  fill(#06CB81);
    ellipse(u,j,10,10);
+   
+  }
 }
-getWormX();
+
+
  float frequency = .001;
     float noiseInterval = PI;
 
